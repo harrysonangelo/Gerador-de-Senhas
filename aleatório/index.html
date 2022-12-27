@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyworld" content=" Gerador de senhas, gerador passoword">
+     <title>Gerador de Senha</title>
+
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <img class="logo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d5b45110-eb8c-40cc-906c-9e0c185e9ae0/dax1dv7-72cf75e2-926f-43a2-beb4-caacf4d7974c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q1YjQ1MTEwLWViOGMtNDBjYy05MDZjLTllMGMxODVlOWFlMFwvZGF4MWR2Ny03MmNmNzVlMi05MjZmLTQzYTItYmViNC1jYWFjZjRkNzk3NGMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MtPsuEJ6sDhCxfkPUFVOjuwnVrWJfUTTAhYZV8XBvKo" alt="Gerador de Senha Logo">
+    <main class="container-input">
+        <span>tamanho<span id="valor"> </span> caracteres</span>
+        <input id="slider" class="slider" type="range" min="5" max="25" value="15"/>
+<button id="button" class="button-cta" onclick="generetePassword()">Gerador de Senha</button>
+    </main>
+<div id="container-password" onclick="copyPassword()" class="container-password hide">
+<span class="title"> Sua senha gerada foi:</span>
+<span id="password" class="password"></span>
+<span class="tooltip">Clique na senha para copiar.</span>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
